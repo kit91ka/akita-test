@@ -37,7 +37,6 @@ export class TodoListComponent {
   }
   toggleTodoCompletion(todo: any) {
     console.log(todo);
-    // Используйте сервис TodoService для изменения состояния тудушки
     this.todoService.toggleTodoCompletion(todo.id);
   }
 

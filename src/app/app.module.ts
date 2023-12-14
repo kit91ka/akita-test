@@ -29,7 +29,7 @@ import {MatIconModule} from "@angular/material/icon";
   ],
   imports: [
     BrowserModule,
-    FormsModule, // Добавьте FormsModule в список импортов
+    FormsModule,
     RouterModule,
     AppRoutingModule,
     AkitaNgDevtools.forRoot(),

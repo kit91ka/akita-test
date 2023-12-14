@@ -10,10 +10,8 @@ export class TodoService extends EntityStore<EntityState<Todo>, Todo> {
     super();
   }
   addTodo(todoText: string) {
-    // Создаем новый объект Todo
     const newTodo: Todo = { text: todoText, completed: false, id: +new Date() };
 
-    // Используем метод add, чтобы добавить новую тудушку в хранилище
     this.todoStore.add(newTodo);
   }
 

@@ -14,7 +14,7 @@ export class TodoAddComponent {
   addTodo() {
     if (this.newTodoText.trim()) {
       this.todoService.addTodo(this.newTodoText);
-      this.newTodoText = ''; // Очищаем поле ввода после добавления тудушки
+      this.newTodoText = '';
     }
   }
 }
