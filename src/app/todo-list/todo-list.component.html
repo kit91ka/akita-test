@@ -1,0 +1,12 @@
+<!--<mat-selection-list (selectionChange)="toggleTodoCompletion($event)">-->
+<!--  <mat-list-option *ngFor="let todo of visibleTodos$ | async" [value]="todo">-->
+<!--    {{ todo.text }}-->
+<!--  </mat-list-option>-->
+<!--</mat-selection-list>-->
+<div *ngFor="let todo of visibleTodos$ | async">
+  <mat-checkbox [ngModel]="todo.completed" (change)="toggleTodoCompletion(todo)">
+    {{ todo.text }}
+  </mat-checkbox>
+<!--  <input type="checkbox" [ngModel]="todo.completed" (change)="toggleTodoCompletion(todo)">-->
+<!--  {{ todo.text }}-->
+</div>
